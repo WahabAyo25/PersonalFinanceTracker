@@ -24,9 +24,6 @@ const AppNavigator = () => (
           case 'Analytics':
             iconName = focused ? 'chart-box' : 'chart-box-outline';
             break;
-          case 'Budget':
-            iconName = focused ? 'wallet' : 'wallet-outline';
-            break;
           case 'Profile':
             iconName = focused ? 'account' : 'account-outline';
             break;
@@ -52,7 +49,6 @@ const AppNavigator = () => (
   >
     <Tab.Screen name="Dashboard" component={DashboardScreen} />
     <Tab.Screen name="Analytics" component={ChartsScreen} />
-    <Tab.Screen name="Budget" component={BudgetScreen} />
     <Tab.Screen 
       name="Profile" 
       component={ProfileStack}
